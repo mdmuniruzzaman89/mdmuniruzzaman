@@ -1,112 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b14">
-<meta name="description" content="MD Muniruzzaman — web developer building thoughtful, modern digital experiences.">
-<title>MD Muniruzzaman | Web Developer</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080713">
+<meta name="description" content="MD Muniruzzaman — web developer creating modern digital experiences.">
+<title>MD Muniruzzaman — Creative Developer</title>
 <style>
-:root{--bg:#080b14;--panel:#111725;--panel2:#151e30;--text:#f3f5fb;--muted:#a5aec0;--blue:#8aa8ff;--line:#ffffff16;--mint:#a5f3d1}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(ellipse at 75% 5%,#1a2850 0,transparent 35%),var(--bg);color:var(--text);line-height:1.7}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1120px,90%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#080b14dd;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:20px;letter-spacing:-.7px}.logo span{color:var(--blue)}
-.links{display:flex;gap:28px;color:var(--muted);font-size:14px}.links a:hover{color:white}
-.pill{display:inline-flex;align-items:center;gap:9px;border:1px solid #a5f3d144;border-radius:30px;padding:7px 13px;color:var(--mint);font-size:12px;letter-spacing:.3px;background:#a5f3d10a}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:9px;background:#dce5ff;color:#101727;font-weight:750;font-size:14px;transition:.2s;border:1px solid transparent}
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #8aa8ff25}
-.btn.ghost{background:transparent;color:var(--text);border-color:#ffffff30}
-.hero{min-height:610px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding:85px 0 95px}
-.eyebrow{color:var(--blue);font-size:12px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase}
-h1{font-size:clamp(43px,6vw,76px);line-height:1.06;letter-spacing:-3px;margin:20px 0}
-h1 span{color:var(--blue)}
-.lead{color:var(--muted);max-width:570px;font-size:17px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.hero-card{position:relative;min-height:380px;border:1px solid #a4baff28;border-radius:26px;background:linear-gradient(145deg,#1b2945,#101725 65%);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 25px 80px #0008}
-.hero-card:before,.hero-card:after{content:"";position:absolute;border:1px solid #91aaff30;border-radius:50%;width:290px;height:290px}
-.hero-card:after{width:390px;height:390px}
-.avatar{z-index:1;width:170px;height:170px;border-radius:50%;display:grid;place-items:center;font-size:56px;font-weight:850;letter-spacing:-4px;color:#eaf0ff;background:linear-gradient(140deg,#607fc5,#9a83d8);border:8px solid #ffffff14;box-shadow:0 0 80px #819bff55}
-.card-note{position:absolute;z-index:2;bottom:25px;left:25px;right:25px;padding:15px 18px;border:1px solid #ffffff20;border-radius:14px;background:#0a1020bb;backdrop-filter:blur(10px);display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}
-.card-note strong{color:white}
-section{padding:82px 0;border-top:1px solid var(--line)}
-.section-head{max-width:650px;margin-bottom:34px}
-h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.5px;line-height:1.15;margin:10px 0 13px}
-.intro{color:var(--muted)}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-.panel{background:linear-gradient(145deg,var(--panel),#0e1420);border:1px solid var(--line);border-radius:18px;padding:27px}
-.panel p{color:var(--muted)}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.fact{padding:18px;border-radius:13px;background:#ffffff08;border:1px solid var(--line)}
-.fact strong{display:block;font-size:18px}.fact span{font-size:12px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.service,.project{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px;transition:.2s}
-.service:hover,.project:hover{transform:translateY(-5px);border-color:#8aa8ff66}
-.icon{font-size:25px;color:var(--blue)}
-h3{font-size:18px;margin:12px 0 7px}.service p,.project p{font-size:14px;color:var(--muted)}
-.project-top{height:145px;border-radius:12px;margin-bottom:17px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#607fc555,transparent 45%),linear-gradient(135deg,#1c2941,#101725);font-size:34px;color:#b9caff}
-.project small{color:var(--blue);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
-.skills{display:flex;flex-wrap:wrap;gap:11px}
-.skills span{padding:10px 15px;border-radius:9px;background:#151f31;border:1px solid var(--line);color:#dbe3f5;font-size:14px}
-.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}
-.contact-form{display:grid;gap:13px}
-input,textarea{width:100%;padding:14px 15px;background:#0c1321;border:1px solid #ffffff24;border-radius:9px;color:white;font:inherit;outline:none}
-input:focus,textarea:focus{border-color:var(--blue)}textarea{min-height:135px;resize:vertical}
-footer{padding:27px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
-@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;gap:35px;padding:65px 0}.hero-card{min-height:300px}.about-grid,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}section{padding:65px 0}h1{letter-spacing:-2px}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#080713;--panel:#121024;--text:#f7f5ff;--muted:#aaa5bd;--purple:#a78bfa;--pink:#f0abfc;--cyan:#67e8f9;--line:#ffffff16}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 12% 15%,#6328a52b,transparent 34%),radial-gradient(ellipse at 88% 38%,#0b9ab51b,transparent 32%),radial-gradient(ellipse at 50% 95%,#8b3d9b18,transparent 35%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.13;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#080713b8;backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 20px 'Space Grotesk';letter-spacing:-1px}.logo b{color:var(--pink)}
+.links{display:flex;gap:28px;color:#c2bdd1;font-size:13px}.links a{transition:.2s}.links a:hover{color:var(--pink)}
+.nav-cta{border:1px solid #b99bff66;padding:9px 16px;border-radius:30px;font-size:13px;background:#a78bfa12}
+.hero{min-height:690px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;padding:80px 0 100px}
+.status{display:inline-flex;align-items:center;gap:9px;border:1px solid #8ff0d33b;background:#8ff0d30c;color:#aaf4db;padding:7px 13px;border-radius:30px;font-size:12px}
+.status i{width:7px;height:7px;border-radius:50%;background:#7ff0c5;box-shadow:0 0 12px #7ff0c5}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;color:var(--pink);text-transform:uppercase}
+h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif}
+h1{font-size:clamp(48px,6.2vw,78px);line-height:1.04;letter-spacing:-4px;margin:23px 0 20px}
+.gradient{background:linear-gradient(100deg,#c4a5ff 5%,#f0abfc 52%,#67e8f9 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:16px;max-width:530px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:10px;font-size:13px;font-weight:700;transition:.25s}
+.btn.primary{background:linear-gradient(105deg,#a78bfa,#e6a8f5);color:#160e25;box-shadow:0 8px 30px #a78bfa30}.btn.secondary{border:1px solid #ffffff2b;background:#ffffff08}
+.btn:hover{transform:translateY(-4px);filter:brightness(1.1)}
+.visual{min-height:440px;position:relative;display:grid;place-items:center}
+.orbit{position:absolute;width:370px;height:370px;border:1px solid #c5a3ff38;border-radius:50%;animation:spin 24s linear infinite}
+.orbit:before,.orbit:after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#f0abfc;box-shadow:0 0 22px #f0abfc;top:42px;left:55px}
+.orbit:after{width:7px;height:7px;top:auto;left:auto;bottom:42px;right:42px;background:var(--cyan);box-shadow:0 0 22px var(--cyan)}
+.orbit.two{width:290px;height:290px;border-style:dashed;border-color:#67e8f933;animation-direction:reverse;animation-duration:32s}
+.glow{position:absolute;width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#ec4899 60%,#22d3ee);filter:blur(75px);opacity:.35}
+.profile-card{position:relative;z-index:2;width:260px;height:320px;border:1px solid #ffffff30;border-radius:24px;background:linear-gradient(145deg,#ffffff1b,#ffffff05);backdrop-filter:blur(18px);box-shadow:0 30px 90px #0008;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.profile-card:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#c4a5ff18,transparent 45%,#67e8f915);pointer-events:none}
+.monogram{width:128px;height:128px;border-radius:38px;display:grid;place-items:center;font:700 43px 'Space Grotesk';letter-spacing:-3px;color:white;background:linear-gradient(140deg,#8064d8,#d477bc 65%,#56c4d8);box-shadow:0 15px 50px #a78bfa55;transform:rotate(-7deg)}
+.profile-card strong{margin-top:25px;font:600 17px 'Space Grotesk'}.profile-card small{color:#bcb5d1;font-size:12px}
+.float-tag{position:absolute;z-index:3;padding:10px 14px;border:1px solid #ffffff24;border-radius:12px;background:#17132bd9;backdrop-filter:blur(12px);font-size:12px;color:#e8e2fa;box-shadow:0 12px 30px #0005}
+.tag-a{top:62px;right:0}.tag-b{bottom:70px;left:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+section{padding:92px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:35px}
+h2{font-size:clamp(34px,4.4vw,49px);line-height:1.13;letter-spacing:-2px;margin:10px 0 14px}.intro{color:var(--muted);max-width:630px}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.glass{background:linear-gradient(145deg,#ffffff0d,#ffffff04);border:1px solid #ffffff1c;border-radius:18px;padding:28px;backdrop-filter:blur(14px)}
+.glass h3{font-size:19px;margin-bottom:9px}.glass p{color:var(--muted);font-size:14px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:13px}.stat{padding:20px;border-radius:15px;background:#a78bfa0c;border:1px solid #b99bff20}.stat strong{font:700 20px 'Space Grotesk';display:block}.stat span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service,.project{padding:25px;border-radius:18px;border:1px solid #ffffff1b;background:linear-gradient(145deg,#17142b,#100e1e);transition:.25s;position:relative;overflow:hidden}
+.service:before,.project:before{content:"";position:absolute;width:150px;height:150px;right:-80px;top:-90px;background:#a78bfa33;filter:blur(45px)}
+.service:hover,.project:hover{transform:translateY(-6px);border-color:#c5a3ff77;box-shadow:0 20px 45px #0005}
+.symbol{font-size:25px;color:var(--pink)}.service h3,.project h3{font-size:18px;margin:13px 0 8px}.service p,.project p{color:var(--muted);font-size:13px}
+.project-art{height:155px;border-radius:13px;margin-bottom:18px;display:grid;place-items:center;font:700 38px 'Space Grotesk';color:#f4eaff;background:radial-gradient(circle at 25% 25%,#e879f944,transparent 38%),radial-gradient(circle at 80% 80%,#22d3ee33,transparent 42%),#211a39;border:1px solid #ffffff17}
+.project:nth-child(2) .project-art{background:radial-gradient(circle at 75% 20%,#67e8f944,transparent 38%),radial-gradient(circle at 20% 90%,#8b5cf644,transparent 45%),#171f39}
+.project:nth-child(3) .project-art{background:radial-gradient(circle at 50% 40%,#f0abfc44,transparent 45%),#25152e}
+.project small{color:var(--cyan);letter-spacing:2px;font-size:10px;text-transform:uppercase}
+.skills{display:flex;flex-wrap:wrap;gap:11px}.skills span{padding:11px 16px;border-radius:10px;border:1px solid #b99bff29;background:linear-gradient(120deg,#a78bfa12,#67e8f908);font-size:13px;color:#e2dcf4}
+.contact-grid{grid-template-columns:.85fr 1.15fr;align-items:start}
+.contact-form{display:grid;gap:13px}input,textarea{width:100%;padding:14px 15px;background:#0e0c1b;border:1px solid #ffffff25;border-radius:10px;color:white;font:inherit;outline:none}input:focus,textarea:focus{border-color:#c4a5ff;box-shadow:0 0 0 3px #a78bfa18}textarea{min-height:140px;resize:vertical}
+.email{color:var(--cyan);margin-top:24px;font-size:14px}
+footer{padding:28px 0;text-align:center;color:#8f89a4;border-top:1px solid var(--line);font-size:12px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;padding:65px 0 80px;gap:20px}.visual{min-height:380px}.orbit{width:310px;height:310px}.orbit.two{width:245px;height:245px}.profile-card{width:225px;height:285px}.tag-a{right:2px}.tag-b{left:2px}.about-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}section{padding:70px 0}h1{letter-spacing:-2.7px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header><nav class="wrap">
-<a class="logo" href="#home">MD<span>.</span> Muniruzzaman</a>
-<div class="links"><a href="#about">About</a><a href="#services">What I Do</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
-<a class="btn" href="#contact">Let's Talk ↗</a>
-</nav></header>
+<header><nav class="wrap"><a class="logo" href="#home">munir<span class="gradient">.</span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's connect ↗</a></nav></header>
 <main>
 <div class="wrap hero" id="home">
-<div>
-<div class="pill"><span class="dot"></span> Learning, building & creating</div>
-<p class="eyebrow" style="margin-top:25px">HELLO, I'M MD MUNIRUZZAMAN</p>
-<h1>I build ideas<br>into <span>digital experiences.</span></h1>
-<p class="lead">I'm a web developer passionate about creating modern, responsive websites and meaningful digital experiences. I'm always learning, experimenting and improving my craft.</p>
-<div class="actions"><a class="btn" href="#projects">Explore My Work ↗</a><a class="btn ghost" href="#contact">Contact Me</a></div>
+<div class="reveal"><div class="status"><i></i> Open to learning & new ideas</div><p class="eyebrow" style="margin-top:27px">HELLO, I'M MD MUNIRUZZAMAN</p><h1>Designing the web.<br><span class="gradient">One idea at a time.</span></h1><p class="lead">I'm a web developer who enjoys turning ideas into beautiful, useful and responsive digital experiences. Always curious. Always creating.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work <span>↗</span></a><a class="btn secondary" href="#contact">Get in touch</a></div></div>
+<div class="visual reveal"><div class="glow"></div><div class="orbit"></div><div class="orbit two"></div><div class="profile-card"><div class="monogram">MD</div><strong>MD Muniruzzaman</strong><small>Web Developer · Creator</small></div><div class="float-tag tag-a">✦ Creative mindset</div><div class="float-tag tag-b">⌘ HTML · CSS · JS</div></div>
 </div>
-<div class="hero-card"><div class="avatar">MD</div><div class="card-note"><span><strong>MD Muniruzzaman</strong><br>Web Developer</span><span>HTML · CSS · JS</span></div></div>
-</div>
-<section id="about"><div class="wrap">
-<div class="section-head"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curious by nature.<br>Creative by practice.</h2><p class="intro">I enjoy exploring web technologies and turning ideas into useful, attractive digital experiences. I'm continuously learning and developing my skills one project at a time.</p></div>
-<div class="about-grid"><div class="panel"><h3>My approach</h3><p>I believe a good website should feel clear, work smoothly on every screen and make information easy to find. I focus on clean layouts, thoughtful details and responsive design.</p></div><div class="facts"><div class="fact"><strong>HTML5</strong><span>Page structure</span></div><div class="fact"><strong>CSS3</strong><span>Visual design</span></div><div class="fact"><strong>JavaScript</strong><span>Interactions</span></div><div class="fact"><strong>Responsive</strong><span>Every screen</span></div></div></div>
-</div></section>
-<section id="services"><div class="wrap">
-<div class="section-head"><p class="eyebrow">WHAT I DO</p><h2>Turning concepts into websites.</h2><p class="intro">The areas I'm learning and building in.</p></div>
-<div class="grid"><article class="service"><div class="icon">⌘</div><h3>Website Development</h3><p>Modern, responsive websites for personal brands, creators and businesses.</p></article><article class="service"><div class="icon">▤</div><h3>Landing Pages</h3><p>Focused and attractive pages that present a product, service or idea clearly.</p></article><article class="service"><div class="icon">✧</div><h3>Creative Web Experiences</h3><p>Exploring interactive interfaces and useful experiences with modern web tools.</p></article></div>
-</div></section>
-<section id="projects"><div class="wrap">
-<div class="section-head"><p class="eyebrow">SELECTED WORK</p><h2>Projects & experiments.</h2><p class="intro">A few project concepts. I'll add live work and case studies here as they are completed.</p></div>
-<div class="grid"><article class="project"><div class="project-top">01</div><small>Website concept</small><h3>Business Website</h3><p>A clean web presence for a growing business.</p></article><article class="project"><div class="project-top">02</div><small>UI exploration</small><h3>Landing Page</h3><p>A modern landing page with clear content and responsive layout.</p></article><article class="project"><div class="project-top">03</div><small>Web experiment</small><h3>Web Application</h3><p>An exploration of useful browser-based tools and interactions.</p></article></div>
-</div></section>
-<section id="skills"><div class="wrap">
-<div class="section-head"><p class="eyebrow">MY TOOLKIT</p><h2>Skills I'm growing.</h2><p class="intro">Technologies and areas I work with and continue to practise.</p></div>
-<div class="skills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>Web Development</span><span>UI Design</span><span>GitHub</span></div>
-</div></section>
-<section id="contact"><div class="wrap contact-grid">
-<div><p class="eyebrow">LET'S CONNECT</p><h2>Have an idea?<br>Let's talk.</h2><p class="intro">Have a question or a project in mind? Send me a message and I'll get back to you.</p><p style="margin-top:22px;color:var(--blue)">✉ mdmuniruzzaman89@gmail.com</p></div>
-<form class="contact-form" action="https://formspree.io/f/xpppvwjg" method="POST">
-<input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
-<input type="email" name="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email" required>
-<input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
-<textarea name="message" placeholder="Tell me about your idea..." aria-label="Message" required></textarea>
-<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-<input type="hidden" name="_subject" value="New portfolio enquiry">
-<button class="btn" type="submit">Contact Us ↗</button>
-</form>
-</div></section>
-</main>
-<footer>© <span id="year"></span> MD Muniruzzaman. Built with curiosity and care.</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<section id="about"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">01 / ABOUT ME</p><h2>Curious mind.<br><span class="gradient">Creative approach.</span></h2><p class="intro">I enjoy exploring web technologies and bringing ideas to life on the internet. My focus is on clean design, smooth experiences and building something better with every project.</p></div><div class="about-grid"><div class="glass"><h3>A little about my journey</h3><p>I'm learning and building in web development, with a special interest in modern interfaces and responsive websites. I believe the best work comes from curiosity, consistency and attention to detail.</p></div><div class="stats"><div class="stat"><strong>01</strong><span>Curiosity first</span></div><div class="stat"><strong>02</strong><span>Always learning</span></div><div class="stat"><strong>03</strong><span>Build with care</span></div><div class="stat"><strong>∞</strong><span>Ideas to explore</span></div></div></div></div></section>
+<section id="services"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">02 / WHAT I DO</p><h2>Ideas become <span class="gradient">experiences.</span></h2><p class="intro">The creative and technical areas I'm exploring and working on.</p></div><div class="cards"><article class="service"><div class="symbol">⌘</div><h3>Web Development</h3><p>Responsive websites with clean structure, thoughtful details and a smooth experience across devices.</p></article><article class="service"><div class="symbol">✳</div><h3>Landing Pages</h3><p>Modern pages that communicate a product, service or personal brand with clarity and style.</p></article><article class="service"><div class="symbol">◈</div><h3>UI Experiments</h3><p>Exploring layouts, visual systems, interactions and creative ways to make the web feel alive.</p></article></div></div></section>
+<section id="projects"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I'm <span class="gradient">building.</span></h2><p class="intro">A few project directions and experiments. Real project links and case studies can be added as the work is published.</p></div><div class="cards"><article class="project"><div class="project-art">01</div><small>WEB DESIGN</small><h3>Business Website</h3><p>A polished online presence concept for a modern business.</p></article><article class="project"><div class="project-art">02</div><small>LANDING PAGE</small><h3>Product Experience</h3><p>A focused landing page concept with clear messaging and responsive layout.</p></article><article class="project"><div class="project-art">03</div><small>EXPLORATION</small><h3>Digital Playground</h3><p>A space to explore web interactions, components and creative ideas.</p></article></div></div></section>
+<section id="skills"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">04 / MY TOOLKIT</p><h2>Tools for <span class="gradient">making things.</span></h2><p class="intro">Technologies and skills I'm practising as I grow as a developer.</p></div><div class="skills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>UI Design</span><span>Git & GitHub</span><span>Web Development</span><span>Creative Thinking</span></div></div></section>
+<section id="contact"><div class="wrap contact-grid reveal"><div><p class="eyebrow">05 / CONTACT</p><h2>Have something<br><span class="gradient">in mind?</span></h2><p class="intro">Have a question, an idea or want to work together? Send me a message. I'd love to hear from you.</p><p class="email">✉ mdmuniruzzaman89@gmail.com</p></div><form class="contact-form" action="https://formspree.io/f/xpppvwjg" method="POST"><input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required><input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required><input type="text" name="subject" placeholder="Subject" aria-label="Subject" required><textarea name="message" placeholder="Tell me about your idea..." aria-label="Message" required></textarea><input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_subject" value="New portfolio enquiry"><button class="btn primary" type="submit">Send a message ↗</button></form></div></section>
+</main><footer>© <span id="year"></span> MD Muniruzzaman · Made with curiosity ✦</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
 </body></html>
