@@ -147,7 +147,7 @@ const menu=document.getElementById("menu"),links=document.getElementById("navlin
 menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"×":"☰"});
 links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
 if("IntersectionObserver" in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("show");observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el))}else{document.querySelectorAll(".reveal").forEach(el=>el.classList.add("show"))}
-document.getElementById("contactForm").addEventListener("submit",event=>{event.preventDefault();const data=new FormData(event.currentTarget);const subject=encodeURIComponent(data.get("subject")+" — ZENVYQ enquiry");const body=encodeURIComponent("Name: "+data.get("name")+"\nEmail: "+data.get("email")+"\n\n"+data.get("message"));document.getElementById("formNote").textContent="Your email app will open. Add your agency email address in the mailto link before launch.";window.location.href="mailto:hello@zenvyq.com?subject="+subject+"&body="+body});
+document.getElementById("contactForm").addEventListener("submit",event=>{event.preventDefault();document.getElementById("formNote").textContent="The enquiry form design is ready. Connect your chosen business email or form service before accepting live enquiries."});
 </script>
 </body>
 </html>
