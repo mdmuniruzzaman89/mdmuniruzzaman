@@ -1,82 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080713">
-<meta name="description" content="MD Muniruzzaman — web developer creating modern digital experiences.">
-<title>MD Muniruzzaman — Creative Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0f">
+<meta name="description" content="MD Muniruzzaman — web developer creating modern, responsive digital experiences.">
+<title>MD Muniruzzaman — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-:root{--bg:#080713;--panel:#121024;--text:#f7f5ff;--muted:#aaa5bd;--purple:#a78bfa;--pink:#f0abfc;--cyan:#67e8f9;--line:#ffffff16}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 12% 15%,#6328a52b,transparent 34%),radial-gradient(ellipse at 88% 38%,#0b9ab51b,transparent 32%),radial-gradient(ellipse at 50% 95%,#8b3d9b18,transparent 35%)}
-body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.13;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
-a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:#080713b8;backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 20px 'Space Grotesk';letter-spacing:-1px}.logo b{color:var(--pink)}
-.links{display:flex;gap:28px;color:#c2bdd1;font-size:13px}.links a{transition:.2s}.links a:hover{color:var(--pink)}
-.nav-cta{border:1px solid #b99bff66;padding:9px 16px;border-radius:30px;font-size:13px;background:#a78bfa12}
-.hero{min-height:690px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;padding:80px 0 100px}
-.status{display:inline-flex;align-items:center;gap:9px;border:1px solid #8ff0d33b;background:#8ff0d30c;color:#aaf4db;padding:7px 13px;border-radius:30px;font-size:12px}
-.status i{width:7px;height:7px;border-radius:50%;background:#7ff0c5;box-shadow:0 0 12px #7ff0c5}
-.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;color:var(--pink);text-transform:uppercase}
-h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif}
-h1{font-size:clamp(48px,6.2vw,78px);line-height:1.04;letter-spacing:-4px;margin:23px 0 20px}
-.gradient{background:linear-gradient(100deg,#c4a5ff 5%,#f0abfc 52%,#67e8f9 100%);background-clip:text;-webkit-background-clip:text;color:transparent}
-.lead{color:var(--muted);font-size:16px;max-width:530px}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:10px;font-size:13px;font-weight:700;transition:.25s}
-.btn.primary{background:linear-gradient(105deg,#a78bfa,#e6a8f5);color:#160e25;box-shadow:0 8px 30px #a78bfa30}.btn.secondary{border:1px solid #ffffff2b;background:#ffffff08}
-.btn:hover{transform:translateY(-4px);filter:brightness(1.1)}
-.visual{min-height:440px;position:relative;display:grid;place-items:center}
-.orbit{position:absolute;width:370px;height:370px;border:1px solid #c5a3ff38;border-radius:50%;animation:spin 24s linear infinite}
-.orbit:before,.orbit:after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:#f0abfc;box-shadow:0 0 22px #f0abfc;top:42px;left:55px}
-.orbit:after{width:7px;height:7px;top:auto;left:auto;bottom:42px;right:42px;background:var(--cyan);box-shadow:0 0 22px var(--cyan)}
-.orbit.two{width:290px;height:290px;border-style:dashed;border-color:#67e8f933;animation-direction:reverse;animation-duration:32s}
-.glow{position:absolute;width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#ec4899 60%,#22d3ee);filter:blur(75px);opacity:.35}
-.profile-card{position:relative;z-index:2;width:310px;height:310px;aspect-ratio:1/1;border:0;border-radius:50%;clip-path:circle(50%);background:#080713;box-shadow:0 24px 75px #0009,0 0 55px #a78bfa24;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;overflow:hidden}
-.profile-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#080713d9 100%);pointer-events:none;z-index:1}
-.profile-card img.profile-photo{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;border-radius:50%;clip-path:circle(50%);object-fit:cover;object-position:center 30%}
-.profile-card strong,.profile-card small{position:relative;z-index:2;text-shadow:0 2px 12px #000;margin-top:auto;font:600 17px 'Space Grotesk'}
-.profile-card small{margin-top:2px;margin-bottom:18px;color:#e5def5;font-size:12px}
-.float-tag{position:absolute;z-index:3;padding:10px 14px;border:1px solid #ffffff24;border-radius:12px;background:#17132bd9;backdrop-filter:blur(12px);font-size:12px;color:#e8e2fa;box-shadow:0 12px 30px #0005}
-.tag-a{top:62px;right:0}.tag-b{bottom:70px;left:0}
-@keyframes spin{to{transform:rotate(360deg)}}
-section{padding:92px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:35px}
-h2{font-size:clamp(34px,4.4vw,49px);line-height:1.13;letter-spacing:-2px;margin:10px 0 14px}.intro{color:var(--muted);max-width:630px}
-.about-grid,.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
-.glass{background:linear-gradient(145deg,#ffffff0d,#ffffff04);border:1px solid #ffffff1c;border-radius:18px;padding:28px;backdrop-filter:blur(14px)}
-.glass h3{font-size:19px;margin-bottom:9px}.glass p{color:var(--muted);font-size:14px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:13px}.stat{padding:20px;border-radius:15px;background:#a78bfa0c;border:1px solid #b99bff20}.stat strong{font:700 20px 'Space Grotesk';display:block}.stat span{font-size:12px;color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.service,.project{padding:25px;border-radius:18px;border:1px solid #ffffff1b;background:linear-gradient(145deg,#17142b,#100e1e);transition:.25s;position:relative;overflow:hidden}
-.service:before,.project:before{content:"";position:absolute;width:150px;height:150px;right:-80px;top:-90px;background:#a78bfa33;filter:blur(45px)}
-.service:hover,.project:hover{transform:translateY(-6px);border-color:#c5a3ff77;box-shadow:0 20px 45px #0005}
-.symbol{font-size:25px;color:var(--pink)}.service h3,.project h3{font-size:18px;margin:13px 0 8px}.service p,.project p{color:var(--muted);font-size:13px}
-.project-art{height:155px;border-radius:13px;margin-bottom:18px;display:grid;place-items:center;font:700 38px 'Space Grotesk';color:#f4eaff;background:radial-gradient(circle at 25% 25%,#e879f944,transparent 38%),radial-gradient(circle at 80% 80%,#22d3ee33,transparent 42%),#211a39;border:1px solid #ffffff17}
-.project:nth-child(2) .project-art{background:radial-gradient(circle at 75% 20%,#67e8f944,transparent 38%),radial-gradient(circle at 20% 90%,#8b5cf644,transparent 45%),#171f39}
-.project:nth-child(3) .project-art{background:radial-gradient(circle at 50% 40%,#f0abfc44,transparent 45%),#25152e}
-.project small{color:var(--cyan);letter-spacing:2px;font-size:10px;text-transform:uppercase}
-.skills{display:flex;flex-wrap:wrap;gap:11px}.skills span{padding:11px 16px;border-radius:10px;border:1px solid #b99bff29;background:linear-gradient(120deg,#a78bfa12,#67e8f908);font-size:13px;color:#e2dcf4}
-.contact-grid{grid-template-columns:.85fr 1.15fr;align-items:start}
-.contact-form{display:grid;gap:13px}input,textarea{width:100%;padding:14px 15px;background:#0e0c1b;border:1px solid #ffffff25;border-radius:10px;color:white;font:inherit;outline:none}input:focus,textarea:focus{border-color:#c4a5ff;box-shadow:0 0 0 3px #a78bfa18}textarea{min-height:140px;resize:vertical}
-.email{color:var(--cyan);margin-top:24px;font-size:14px}
-footer{padding:28px 0;text-align:center;color:#8f89a4;border-top:1px solid var(--line);font-size:12px}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
-@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;padding:65px 0 80px;gap:20px}.visual{min-height:380px}.orbit{width:310px;height:310px}.orbit.two{width:245px;height:245px}.profile-card{width:250px;height:250px;aspect-ratio:1/1;border-radius:50%;clip-path:circle(50%)}.tag-a{right:2px}.tag-b{left:2px}.about-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}section{padding:70px 0}h1{letter-spacing:-2.7px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+:root{--bg:#0a0a0f;--surface:#13131b;--surface2:#1a1a24;--ink:#f3f1ec;--muted:#9c9aab;--line:#ffffff17;--a:#ff4f9a;--b:#5b7cff;--grad:linear-gradient(110deg,#ff4f9a,#5b7cff);--r:26px;--max:1180px}
+[data-theme=light]{--bg:#f5f3ee;--surface:#ffffff;--surface2:#ece9e2;--ink:#15141b;--muted:#6b6977;--line:#15141b1a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;transition:background .3s,color .3s}
+h1,h2,h3,.display{font-family:"Bricolage Grotesque","DM Sans",sans-serif;letter-spacing:-.035em}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),90%);margin:auto}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px;border-radius:6px}
+.glow{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,#ff4f9a22,#5b7cff12 45%,transparent 70%);transform:translate(-50%,-50%);left:50%;top:30%;transition:opacity .3s}
+main,header,footer{position:relative;z-index:1}
+
+/* NAV */
+.nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:6px;padding:8px 8px 8px 20px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--surface) 78%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 12px 40px #0004;max-width:94vw}
+.logo{font:800 18px "Bricolage Grotesque";margin-right:14px}
+.logo i{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:2px}
+.nav-links a{padding:8px 13px;border-radius:999px;font-size:13px;color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--ink);background:var(--surface2)}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface2);color:var(--ink);cursor:pointer;font-size:16px;display:grid;place-items:center;transition:.2s}
+.icon-btn:hover{transform:rotate(18deg)}
+.nav-cta{padding:10px 17px;border-radius:999px;background:var(--ink);color:var(--bg);font-size:13px;font-weight:700;margin-left:4px;transition:.2s}
+.nav-cta:hover{transform:translateY(-2px)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:14px;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.25s}
+.btn.primary{background:var(--grad);color:#fff;box-shadow:0 10px 34px #ff4f9a30}
+.btn.ghost{border-color:var(--line);background:var(--surface);color:var(--ink)}
+.btn:hover{transform:translateY(-3px)}
+
+/* HERO */
+.hero{padding:150px 0 70px}
+.hello{display:inline-flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.hello b{color:var(--ink);font-weight:700}
+.big-name{font-size:clamp(46px,9.4vw,136px);line-height:.95;font-weight:800;margin:20px 0 40px}
+.big-name span{display:block}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:28px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.card:hover{border-color:color-mix(in srgb,var(--a) 45%,var(--line))}
+.photo{grid-column:1/5;grid-row:1/3;padding:0;min-height:480px;isolation:isolate}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;z-index:-1;transition:transform .8s}
+.photo:hover img{transform:scale(1.04)}
+.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#000b);z-index:0}
+.photo figcaption{position:absolute;left:22px;bottom:20px;z-index:1;color:#fff}
+.photo figcaption strong{display:block;font:700 19px "Bricolage Grotesque"}
+.photo figcaption span{font-size:12px;opacity:.8}
+.intro{grid-column:5/13}
+.intro h2{font-size:clamp(26px,3.3vw,40px);line-height:1.12;margin-bottom:14px}
+.intro p{color:var(--muted);max-width:560px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.tools{grid-column:5/9}
+.status{grid-column:9/13;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{padding:8px 13px;border-radius:999px;background:var(--surface2);border:1px solid var(--line);font-size:13px;font-weight:500}
+.pulse{display:inline-block;width:9px;height:9px;border-radius:50%;background:#34e0a1;box-shadow:0 0 0 0 #34e0a199;animation:pulse 2s infinite;margin-right:9px}
+@keyframes pulse{70%{box-shadow:0 0 0 11px #34e0a100}100%{box-shadow:0 0 0 0 #34e0a100}}
+.status p{font:700 22px/1.2 "Bricolage Grotesque";letter-spacing:-.03em}
+
+/* MARQUEE */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:22px 0;margin:50px 0 0;background:var(--surface)}
+.track{display:flex;gap:44px;width:max-content;animation:slide 32s linear infinite}
+.track span{font:700 clamp(22px,3vw,34px) "Bricolage Grotesque";letter-spacing:-.03em;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span:after{content:"✦";color:var(--a);font-size:.7em}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:110px 0}
+.head{margin-bottom:46px;max-width:720px}
+.head h2{font-size:clamp(36px,5.2vw,64px);line-height:1.02;margin-top:12px}
+.head p{color:var(--muted);margin-top:16px;max-width:560px}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about .head{margin:0;position:sticky;top:110px}
+.about-text{font-size:clamp(18px,2vw,22px);line-height:1.6}
+.about-text p+p{margin-top:18px;color:var(--muted);font-size:16px}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.value{padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.value strong{font:800 30px "Bricolage Grotesque"}
+.value span{display:block;font-size:13px;color:var(--muted)}
+
+/* SERVICES */
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px 1fr 1.2fr 30px;gap:20px;align-items:center;padding:30px 4px;border-bottom:1px solid var(--line);transition:.3s;cursor:default}
+.row:hover{padding-inline:20px;background:var(--surface)}
+.row .n{color:var(--muted);font:700 14px "Bricolage Grotesque"}
+.row h3{font-size:clamp(22px,3vw,34px)}
+.row p{color:var(--muted);font-size:14px}
+.row .arrow{font-size:22px;transition:.3s}
+.row:hover .arrow{transform:translate(4px,-4px);color:var(--a)}
+
+/* WORK */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{padding:14px;border-radius:var(--r);border:1px solid var(--line);background:var(--surface);transition:.3s;display:block}
+.project:hover{transform:translateY(-8px);border-color:color-mix(in srgb,var(--a) 50%,var(--line));box-shadow:0 28px 60px #0004}
+.art{height:220px;border-radius:18px;display:grid;place-items:center;font:800 56px "Bricolage Grotesque";letter-spacing:-.05em;color:#fff;position:relative;overflow:hidden}
+.art:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff12 1px,transparent 1px),linear-gradient(90deg,#ffffff12 1px,transparent 1px);background-size:28px 28px;mask-image:radial-gradient(circle,#000,transparent 75%)}
+.a1{background:linear-gradient(135deg,#b6f23a22,#0a0f08),#0d140a;color:#c5ff4a}
+.a2{background:radial-gradient(circle at 30% 20%,#ff4f9a99,transparent 55%),radial-gradient(circle at 80% 85%,#5b7cffaa,transparent 55%),#1a1230}
+.a3{background:radial-gradient(circle at 70% 25%,#34e0a188,transparent 50%),radial-gradient(circle at 20% 80%,#5b7cff88,transparent 55%),#101a2a}
+.meta{padding:20px 10px 8px}
+.meta small{color:var(--a);letter-spacing:.16em;font-size:10px;font-weight:700;text-transform:uppercase}
+.meta h3{font-size:22px;margin:6px 0}
+.meta p{color:var(--muted);font-size:14px}
+.tag{display:inline-block;margin-top:14px;font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tag.live{color:#34e0a1;border-color:#34e0a155}
+
+/* CONTACT */
+.contact-card{border:1px solid var(--line);border-radius:34px;padding:clamp(28px,5vw,64px);background:var(--surface);display:grid;grid-template-columns:1fr 1fr;gap:50px;position:relative;overflow:hidden}
+.contact-card:before{content:"";position:absolute;width:480px;height:480px;right:-160px;top:-180px;border-radius:50%;background:var(--grad);filter:blur(110px);opacity:.22}
+.contact-card>*{position:relative}
+.contact-card h2{font-size:clamp(36px,5vw,62px);line-height:1;margin:12px 0 18px}
+.contact-card p{color:var(--muted)}
+.mail{display:inline-block;margin-top:26px;font:700 18px "Bricolage Grotesque";border-bottom:2px solid var(--a);padding-bottom:2px}
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:15px 16px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;outline:none;transition:.2s}
+input:focus,textarea:focus{border-color:var(--a);box-shadow:0 0 0 4px #ff4f9a1f}
+textarea{min-height:140px;resize:vertical}
+footer{padding:34px 0 40px;color:var(--muted);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.reveal.show{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.nav-links{display:none}.logo{margin-right:6px}
+.photo{grid-column:1/13;grid-row:auto;min-height:420px}
+.intro,.tools,.status{grid-column:1/13}
+.about{grid-template-columns:1fr;gap:30px}.about .head{position:static}
+.row{grid-template-columns:40px 1fr 24px}.row p{display:none}
+.work{grid-template-columns:1fr}
+.contact-card{grid-template-columns:1fr;gap:34px}
+section{padding:80px 0}
+.hero{padding-top:120px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}.glow{display:none}}
 </style>
 </head>
 <body>
-<header><nav class="wrap"><a class="logo" href="#home">munir<span class="gradient">.</span></a><div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's connect ↗</a></nav></header>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header>
+<nav class="nav" aria-label="Main navigation">
+<a class="logo" href="#home">munir<i>.</i></a>
+<div class="nav-links"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
+<button class="icon-btn" id="theme" type="button" aria-label="Switch between dark and light theme">☾</button>
+<a class="nav-cta" href="#contact">Let's talk</a>
+</nav>
+</header>
+
 <main>
 <div class="wrap hero" id="home">
-<div class="reveal"><div class="status"><i></i> Open to learning & new ideas</div><p class="eyebrow" style="margin-top:27px">HELLO, I'M MD MUNIRUZZAMAN</p><h1>Designing the web.<br><span class="gradient">One idea at a time.</span></h1><p class="lead">I'm a web developer who enjoys turning ideas into beautiful, useful and responsive digital experiences. Always curious. Always creating.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work <span>↗</span></a><a class="btn secondary" href="#contact">Get in touch</a></div></div>
-<div class="visual reveal"><div class="glow"></div><div class="orbit"></div><div class="orbit two"></div><div class="profile-card"><img class="profile-photo" src="IMG_20261112_013252.png" alt="MD Muniruzzaman profile photo"><strong>MD Muniruzzaman</strong><small>Web Developer · Creator</small></div><div class="float-tag tag-a">✦ Creative mindset</div><div class="float-tag tag-b">⌘ HTML · CSS · JS</div></div>
+<p class="hello reveal"><span class="pulse"></span><b>Hello, I'm a web developer</b> — open to learning &amp; new ideas</p>
+<h1 class="big-name reveal"><span>MD</span><span class="grad">Muniruzzaman</span></h1>
+
+<div class="bento">
+<figure class="card photo reveal">
+<img src="IMG_20261112_013252.png" alt="MD Muniruzzaman profile photo">
+<figcaption><strong>MD Muniruzzaman</strong><span>Web Developer · Creator</span></figcaption>
+</figure>
+
+<div class="card intro reveal">
+<p class="label">Introduction</p>
+<h2 style="margin-top:12px">Designing the web, <span class="grad">one idea at a time.</span></h2>
+<p>I turn ideas into beautiful, useful and responsive digital experiences. Always curious. Always creating.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore my work ↗</a><a class="btn ghost" href="#contact">Get in touch</a></div>
 </div>
-<section id="about"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">01 / ABOUT ME</p><h2>Curious mind.<br><span class="gradient">Creative approach.</span></h2><p class="intro">I enjoy exploring web technologies and bringing ideas to life on the internet. My focus is on clean design, smooth experiences and building something better with every project.</p></div><div class="about-grid"><div class="glass"><h3>A little about my journey</h3><p>I'm learning and building in web development, with a special interest in modern interfaces and responsive websites. I believe the best work comes from curiosity, consistency and attention to detail.</p></div><div class="stats"><div class="stat"><strong>01</strong><span>Curiosity first</span></div><div class="stat"><strong>02</strong><span>Always learning</span></div><div class="stat"><strong>03</strong><span>Build with care</span></div><div class="stat"><strong>∞</strong><span>Ideas to explore</span></div></div></div></div></section>
-<section id="services"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">02 / WHAT I DO</p><h2>Ideas become <span class="gradient">experiences.</span></h2><p class="intro">The creative and technical areas I'm exploring and working on.</p></div><div class="cards"><article class="service"><div class="symbol">⌘</div><h3>Web Development</h3><p>Responsive websites with clean structure, thoughtful details and a smooth experience across devices.</p></article><article class="service"><div class="symbol">✳</div><h3>Landing Pages</h3><p>Modern pages that communicate a product, service or personal brand with clarity and style.</p></article><article class="service"><div class="symbol">◈</div><h3>UI Experiments</h3><p>Exploring layouts, visual systems, interactions and creative ways to make the web feel alive.</p></article></div></div></section>
-<section id="projects"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I'm <span class="gradient">building.</span></h2><p class="intro">A few project directions and experiments. Real project links and case studies can be added as the work is published.</p></div><div class="cards"><article class="project"><div class="project-art">01</div><small>WEB DESIGN</small><h3>Business Website</h3><p>A polished online presence concept for a modern business.</p></article><article class="project"><div class="project-art">02</div><small>LANDING PAGE</small><h3>Product Experience</h3><p>A focused landing page concept with clear messaging and responsive layout.</p></article><article class="project"><div class="project-art">03</div><small>EXPLORATION</small><h3>Digital Playground</h3><p>A space to explore web interactions, components and creative ideas.</p></article></div></div></section>
-<section id="skills"><div class="wrap reveal"><div class="section-head"><p class="eyebrow">04 / MY TOOLKIT</p><h2>Tools for <span class="gradient">making things.</span></h2><p class="intro">Technologies and skills I'm practising as I grow as a developer.</p></div><div class="skills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>UI Design</span><span>Git & GitHub</span><span>Web Development</span><span>Creative Thinking</span></div></div></section>
-<section id="contact"><div class="wrap contact-grid reveal"><div><p class="eyebrow">05 / CONTACT</p><h2>Have something<br><span class="gradient">in mind?</span></h2><p class="intro">Have a question, an idea or want to work together? Send me a message. I'd love to hear from you.</p><p class="email">✉ mdmuniruzzaman89@gmail.com</p></div><form class="contact-form" action="https://formspree.io/f/xpppvwjg" method="POST"><input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required><input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required><input type="text" name="subject" placeholder="Subject" aria-label="Subject" required><textarea name="message" placeholder="Tell me about your idea..." aria-label="Message" required></textarea><input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="_subject" value="New portfolio enquiry"><button class="btn primary" type="submit">Send a message ↗</button></form></div></section>
-</main><footer>© <span id="year"></span> MD Muniruzzaman · Made with curiosity ✦</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
-</body></html>
+
+<div class="card tools reveal">
+<p class="label">Toolkit</p>
+<div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Git &amp; GitHub</span></div>
+</div>
+
+<div class="card status reveal">
+<p class="label">Right now</p>
+<p><span class="pulse"></span>Learning, building &amp; exploring new ideas.</p>
+</div>
+</div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+<div class="track">
+<span>Web Development</span><span>Landing Pages</span><span>UI Experiments</span><span>Responsive Design</span><span>Creative Thinking</span>
+<span>Web Development</span><span>Landing Pages</span><span>UI Experiments</span><span>Responsive Design</span><span>Creative Thinking</span>
+</div>
+</div>
+
+<section id="about"><div class="wrap about">
+<div class="head reveal"><p class="label">01 — About</p><h2>Curious mind. <span class="grad">Creative approach.</span></h2></div>
+<div class="reveal">
+<div class="about-text">
+<p>I enjoy exploring web technologies and bringing ideas to life on the internet. My focus is on clean design, smooth experiences and building something better with every project.</p>
+<p>I'm learning and building in web development, with a special interest in modern interfaces and responsive websites. I believe the best work comes from curiosity, consistency and attention to detail.</p>
+</div>
+<div class="values">
+<div class="value"><strong>01</strong><span>Curiosity first</span></div>
+<div class="value"><strong>02</strong><span>Always learning</span></div>
+<div class="value"><strong>03</strong><span>Build with care</span></div>
+<div class="value"><strong>∞</strong><span>Ideas to explore</span></div>
+</div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="head reveal"><p class="label">02 — What I do</p><h2>Ideas become <span class="grad">experiences.</span></h2></div>
+<div class="rows reveal">
+<div class="row"><span class="n">01</span><h3>Web Development</h3><p>Responsive websites with clean structure, thoughtful details and a smooth experience across devices.</p><span class="arrow">↗</span></div>
+<div class="row"><span class="n">02</span><h3>Landing Pages</h3><p>Modern pages that communicate a product, service or personal brand with clarity and style.</p><span class="arrow">↗</span></div>
+<div class="row"><span class="n">03</span><h3>UI Experiments</h3><p>Exploring layouts, visual systems, interactions and creative ways to make the web feel alive.</p><span class="arrow">↗</span></div>
+</div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<div class="head reveal"><p class="label">03 — Selected work</p><h2>Things I'm <span class="grad">building.</span></h2><p>A few project directions and experiments. Real case studies can be added as the work is published.</p></div>
+<div class="work">
+<a class="project reveal" href="zenvyq/">
+<div class="art a1">ZQ</div>
+<div class="meta"><small>Agency website</small><h3>ZENVYQ</h3><p>A digital marketing agency website — strategy, design and growth.</p><span class="tag live">View site ↗</span></div>
+</a>
+<article class="project reveal">
+<div class="art a2">02</div>
+<div class="meta"><small>Landing page</small><h3>Product Experience</h3><p>A focused landing page concept with clear messaging and responsive layout.</p><span class="tag">Concept</span></div>
+</article>
+<article class="project reveal">
+<div class="art a3">03</div>
+<div class="meta"><small>Exploration</small><h3>Digital Playground</h3><p>A space to explore web interactions, components and creative ideas.</p><span class="tag">Concept</span></div>
+</article>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+<div class="contact-card">
+<div>
+<p class="label">04 — Contact</p>
+<h2>Have something <span class="grad">in mind?</span></h2>
+<p>Have a question, an idea or want to work together? Send me a message. I'd love to hear from you.</p>
+<a class="mail" href="mailto:mdmuniruzzaman89@gmail.com">mdmuniruzzaman89@gmail.com</a>
+</div>
+<form action="https://formspree.io/f/xpppvwjg" method="POST">
+<input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+<input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required>
+<input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
+<textarea name="message" placeholder="Tell me about your idea..." aria-label="Message" required></textarea>
+<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+<input type="hidden" name="_subject" value="New portfolio enquiry">
+<button class="btn primary" type="submit">Send a message ↗</button>
+</form>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> MD Muniruzzaman</span><span>Made with curiosity ✦</span></div></footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+/* theme */
+const root=document.documentElement,tbtn=document.getElementById('theme');
+function setTheme(t){root.dataset.theme=t;tbtn.textContent=t==='dark'?'☾':'☀';document.querySelector('meta[name=theme-color]').content=t==='dark'?'#0a0a0f':'#f5f3ee'}
+let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
+setTheme(saved||'dark');
+tbtn.addEventListener('click',()=>{const t=root.dataset.theme==='dark'?'light':'dark';setTheme(t);try{localStorage.setItem('theme',t)}catch(e){}});
+
+/* reveal on scroll */
+const els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});
+els.forEach(el=>io.observe(el));
+}else{els.forEach(el=>el.classList.add('show'))}
+
+/* cursor glow */
+const glow=document.getElementById('glow');
+if(matchMedia('(hover:hover)').matches){
+addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'},{passive:true});
+}else{glow.style.display='none'}
+</script>
+</body>
+</html>
