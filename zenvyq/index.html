@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070907">
+<meta name="description" content="ZENVYQ is a creative digital marketing agency helping ambitious brands grow through strategy, design and digital performance.">
+<title>ZENVYQ — Think Smart. Grow Digital.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070907;--panel:#101510;--panel2:#151d16;--ink:#f4f7f2;--muted:#a2ada1;--green:#b7ff38;--green2:#83d91c;--line:#d9ffd51c;--max:1160px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 76% 12%,#7dce2520,transparent 30%),radial-gradient(ellipse at 5% 55%,#4f9b2010,transparent 35%),#070907}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),90%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:#070907d9;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{font:700 25px "Space Grotesk";letter-spacing:-1.6px}.brand span{color:var(--green)}
+.navlinks{display:flex;align-items:center;gap:30px;color:#c1cbbd;font-size:13px}.navlinks a:hover{color:var(--green)}
+.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-size:13px;font-weight:700;transition:.25s}
+.navbtn{padding:10px 17px;border:1px solid #b7ff3866;color:var(--green)}
+.btn{padding:14px 21px}.btn.primary{background:var(--green);color:#10150b;box-shadow:0 8px 30px #b7ff3827}.btn.ghost{border:1px solid #ffffff30;background:#ffffff08;color:var(--ink)}
+.btn:hover,.navbtn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:9px;font-size:20px}
+.hero{min-height:710px;display:grid;grid-template-columns:1.03fr .97fr;gap:35px;align-items:center;padding:75px 0 95px}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--green);border:1px solid #b7ff383b;background:#b7ff380b;padding:7px 13px;border-radius:999px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 13px var(--green)}
+h1,h2,h3,.brand{font-family:"Space Grotesk",sans-serif}
+h1{font-size:clamp(48px,6.3vw,82px);line-height:1.02;letter-spacing:-4.5px;margin:24px 0}
+.accent{color:var(--green)}
+.lead{color:var(--muted);font-size:16px;max-width:550px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.micro{display:flex;align-items:center;gap:12px;margin-top:35px;color:#8e9b8b;font-size:12px}.micro b{color:#eaf5e5;font-weight:600}
+.hero-art{min-height:510px;display:grid;place-items:center;position:relative;perspective:1000px;isolation:isolate}
+.aura{position:absolute;width:360px;height:360px;border-radius:50%;background:var(--green);filter:blur(100px);opacity:.14}
+.orbit{position:absolute;width:420px;height:420px;border:1px solid #b7ff3833;border-radius:50%;transform:rotateX(68deg) rotateZ(-20deg);animation:orbit 24s linear infinite}
+.orbit:before{content:"";position:absolute;width:12px;height:12px;top:45px;left:70px;border-radius:50%;background:var(--green);box-shadow:0 0 24px var(--green)}
+.orbit.two{width:330px;height:330px;border-style:dashed;border-color:#b7ff3826;transform:rotateX(70deg) rotateZ(40deg);animation-direction:reverse;animation-duration:32s}
+.orb{position:relative;width:min(310px,72vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 31% 24%,#f1ffc6 0 2%,#caff70 5%,#78c52a 17%,#243c16 42%,#0c1309 68%,#050805 76%);box-shadow:inset -25px -32px 55px #000c,inset 12px 10px 30px #efffc24d,0 0 45px #a4ff3c30,0 35px 90px #000;transform-style:preserve-3d;animation:float 6s ease-in-out infinite}
+.orb:before{content:"";position:absolute;inset:11%;border-radius:50%;border:1px solid #e4ffae4d;transform:translateZ(22px) rotate(-27deg);box-shadow:0 0 30px #c9ff5a22}
+.orb:after{content:"";position:absolute;width:70%;height:18%;left:15%;top:42%;border-radius:50%;border:2px solid #c9ff6b8c;transform:rotate(-31deg) rotateX(65deg);box-shadow:0 0 22px #b7ff3866}
+.float{position:absolute;z-index:3;padding:12px 15px;border:1px solid #d8ffbd26;background:#111811d9;backdrop-filter:blur(14px);border-radius:13px;color:#dce9d5;font-size:12px;box-shadow:0 14px 35px #0008}
+.float strong{color:var(--green);display:block;font:600 16px "Space Grotesk"}
+.float.a{top:75px;right:0}.float.b{bottom:72px;left:0}
+@keyframes orbit{to{transform:rotateX(68deg) rotateZ(340deg)}}@keyframes float{50%{transform:translateY(-13px) rotateY(9deg) rotateX(-5deg)}}
+section{padding:100px 0;border-top:1px solid var(--line)}
+.section-head{max-width:690px;margin-bottom:38px}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--green);font-weight:700;text-transform:uppercase}
+h2{font-size:clamp(35px,4.5vw,54px);line-height:1.1;letter-spacing:-2.5px;margin:12px 0 15px}
+.sub{color:var(--muted);max-width:650px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{position:relative;overflow:hidden;padding:27px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#151d16,#0d120e);transition:.28s}
+.card:before{content:"";position:absolute;width:150px;height:150px;right:-90px;top:-90px;background:#b7ff38;filter:blur(75px);opacity:.12}
+.card:hover{transform:translateY(-6px);border-color:#b7ff3870;box-shadow:0 22px 45px #0007}
+.icon{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;background:#b7ff3815;color:var(--green);font-size:20px;border:1px solid #b7ff3833}
+.card h3{font-size:19px;margin:20px 0 8px}.card p{color:var(--muted);font-size:13px}
+.num{position:absolute;right:24px;top:25px;color:#63705d;font:600 12px "Space Grotesk"}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.feature-panel{min-height:360px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at 50% 45%,#b7ff3820,transparent 38%),linear-gradient(145deg,#141b14,#090d09);display:grid;place-items:center;position:relative;overflow:hidden}
+.gridglow{position:absolute;inset:0;background-image:linear-gradient(#b7ff380d 1px,transparent 1px),linear-gradient(90deg,#b7ff380d 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(transparent,#000,transparent)}
+.mini-orb{width:175px;height:175px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#efffc2,#a2eb3e 15%,#3a651c 48%,#080c07 75%);box-shadow:inset -15px -20px 35px #000a,0 0 70px #b7ff3840;position:relative;z-index:1}
+.mini-orb:after{content:"";position:absolute;inset:-22px -40px;border:1px solid #b7ff3866;border-radius:50%;transform:rotate(-25deg) scaleY(.38)}
+.points{display:grid;gap:17px;margin-top:25px}.point{display:flex;gap:14px;align-items:flex-start}.check{flex:0 0 25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#b7ff3818;color:var(--green);font-size:13px}.point b{display:block;font-size:14px}.point span{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work-card{border:1px solid var(--line);border-radius:18px;padding:14px;background:#0e130f}.work-art{height:185px;border-radius:12px;display:grid;place-items:center;font:700 38px "Space Grotesk";color:var(--green);background:radial-gradient(circle at 50% 40%,#b7ff382c,transparent 42%),linear-gradient(135deg,#1b2818,#090d09);border:1px solid #b7ff3820}.work-card:nth-child(2) .work-art{background:radial-gradient(circle at 70% 25%,#b7ff3833,transparent 40%),linear-gradient(135deg,#1c2518,#0a100b)}.work-card:nth-child(3) .work-art{background:radial-gradient(circle at 30% 75%,#b7ff382b,transparent 40%),linear-gradient(135deg,#20291b,#0a0d0a)}
+.work-card small{display:block;color:var(--green);font-size:10px;letter-spacing:2px;margin:17px 0 5px}.work-card h3{font-size:18px}.work-card p{font-size:13px;color:var(--muted);margin-top:5px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{padding:22px;border-top:1px solid #b7ff3870;background:linear-gradient(180deg,#b7ff380c,transparent);border-radius:0 0 14px 14px}.step strong{font:700 13px "Space Grotesk";color:var(--green)}.step h3{font-size:17px;margin:15px 0 7px}.step p{font-size:12px;color:var(--muted)}
+.cta{border:1px solid #b7ff3840;border-radius:23px;padding:50px;background:radial-gradient(ellipse at 85% 30%,#b7ff381c,transparent 35%),#101610;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{max-width:650px;margin:8px 0}.cta p{color:var(--muted);font-size:14px}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-box{padding:28px;border:1px solid var(--line);border-radius:18px;background:#101610}
+form{display:grid;gap:12px}input,textarea{width:100%;padding:14px 15px;border:1px solid #ffffff24;border-radius:10px;background:#080d08;color:white;font:inherit;outline:none}input:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #b7ff3818}textarea{min-height:135px;resize:vertical}button{border:0;cursor:pointer;font:inherit}
+.contact-note{color:var(--muted);font-size:14px;margin-top:15px}.email{color:var(--green);font-size:14px;margin-top:20px}
+footer{padding:30px 0;border-top:1px solid var(--line);color:#81907c;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:76px;left:0;right:0;padding:22px 5%;background:#090d09;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.hero{grid-template-columns:1fr;padding:65px 0 70px}.hero-art{min-height:410px}.orbit{width:340px;height:340px}.orbit.two{width:270px;height:270px}.services,.work{grid-template-columns:1fr 1fr}.split,.contact{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.cta{align-items:flex-start;flex-direction:column}section{padding:75px 0}}
+@media(max-width:520px){h1{letter-spacing:-2.7px}.services,.work,.process{grid-template-columns:1fr}.hero-art{min-height:350px}.orbit{width:290px;height:290px}.orbit.two{width:230px;height:230px}.float.a{right:-3px;top:42px}.float.b{left:-3px;bottom:38px}.cta{padding:30px 24px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="brand" href="#home">ZENVYQ<span>.</span></a>
+<div class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#contact">Contact</a></div>
+<a class="navbtn" href="#contact">Let's talk ↗</a><button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+</nav></header>
+<main>
+<div class="wrap hero" id="home">
+<div class="reveal">
+<div class="kicker"><i></i> Independent digital agency</div>
+<p class="eyebrow" style="margin-top:28px">STRATEGY · CREATIVITY · PERFORMANCE</p>
+<h1>Make your brand<br>impossible to <span class="accent">ignore.</span></h1>
+<p class="lead">We turn bold ideas into meaningful digital experiences. From brand presence to performance marketing, ZENVYQ helps businesses move forward.</p>
+<div class="actions"><a class="btn primary" href="#services">Explore our services ↗</a><a class="btn ghost" href="#work">See what we do</a></div>
+<div class="micro"><b>Built for ambitious brands.</b><span>—</span><span>Made for the next move.</span></div>
+</div>
+<div class="hero-art reveal" aria-label="Abstract glowing 3D green orb">
+<div class="aura"></div><div class="orbit"></div><div class="orbit two"></div><div class="orb"></div>
+<div class="float a"><strong>01 / THINK</strong>Strategy first</div><div class="float b"><strong>02 / GROW</strong>Move with purpose</div>
+</div>
+</div>
+<section id="services"><div class="wrap reveal">
+<div class="section-head"><p class="eyebrow">01 / WHAT WE DO</p><h2>Digital, with <span class="accent">direction.</span></h2><p class="sub">A focused set of services to help your brand get discovered, connect with people and grow online.</p></div>
+<div class="services">
+<article class="card"><span class="num">01</span><div class="icon">⌕</div><h3>Search Engine Optimization</h3><p>Improve your visibility and help the right people discover your business through search.</p></article>
+<article class="card"><span class="num">02</span><div class="icon">◎</div><h3>Social Media Marketing</h3><p>Build a consistent social presence with thoughtful content and community-focused strategy.</p></article>
+<article class="card"><span class="num">03</span><div class="icon">↗</div><h3>Paid Advertising</h3><p>Plan and manage focused ad campaigns designed around clear goals and useful insights.</p></article>
+<article class="card"><span class="num">04</span><div class="icon">✳</div><h3>Brand Identity</h3><p>Create a recognisable visual direction and a consistent voice across digital touchpoints.</p></article>
+<article class="card"><span class="num">05</span><div class="icon">▤</div><h3>Content Marketing</h3><p>Share useful stories and ideas that make your brand more relevant and memorable.</p></article>
+<article class="card"><span class="num">06</span><div class="icon">◇</div><h3>Web Design</h3><p>Give your business a modern, responsive website built around clarity and user experience.</p></article>
+</div></div></section>
+<section id="about"><div class="wrap split reveal">
+<div><p class="eyebrow">02 / ABOUT ZENVYQ</p><h2>We see the big picture.<br><span class="accent">Then make it happen.</span></h2><p class="sub">The digital world moves quickly. We bring strategy, creative thinking and practical execution together, so every part of your online presence has a purpose.</p>
+<div class="points">
+<div class="point"><span class="check">✓</span><div><b>Clarity before campaigns</b><span>Start with your audience, goals and the message that matters.</span></div></div>
+<div class="point"><span class="check">✓</span><div><b>Creative with a purpose</b><span>Make every design choice and digital touchpoint work harder.</span></div></div>
+<div class="point"><span class="check">✓</span><div><b>Progress you can understand</b><span>Focus on useful insights, honest communication and steady improvement.</span></div></div>
+</div></div>
+<div class="feature-panel"><div class="gridglow"></div><div class="mini-orb"></div></div>
+</div></section>
+<section id="work"><div class="wrap reveal">
+<div class="section-head"><p class="eyebrow">03 / SELECTED WORK</p><h2>Ideas made <span class="accent">visible.</span></h2><p class="sub">A preview of the kind of digital experiences ZENVYQ can create. Replace these concept tiles with real client projects as they become available.</p></div>
+<div class="work">
+<article class="work-card"><div class="work-art">BRAND/01</div><small>BRAND IDENTITY</small><h3>Identity with impact</h3><p>A cohesive visual direction for a brand ready to stand out.</p></article>
+<article class="work-card"><div class="work-art">SOCIAL/02</div><small>SOCIAL CAMPAIGN</small><h3>Content that connects</h3><p>A social-first concept designed to create recognition and engagement.</p></article>
+<article class="work-card"><div class="work-art">WEB/03</div><small>WEB EXPERIENCE</small><h3>A sharper digital home</h3><p>A responsive website concept with clear messaging and a confident look.</p></article>
+</div></div></section>
+<section><div class="wrap reveal">
+<div class="section-head"><p class="eyebrow">04 / HOW WE WORK</p><h2>Simple steps.<br><span class="accent">Meaningful momentum.</span></h2></div>
+<div class="process">
+<div class="step"><strong>STEP 01</strong><h3>Discover</h3><p>Understand your business, audience and goals.</p></div>
+<div class="step"><strong>STEP 02</strong><h3>Define</h3><p>Shape a clear strategy and creative direction.</p></div>
+<div class="step"><strong>STEP 03</strong><h3>Create</h3><p>Build the campaign, content or experience.</p></div>
+<div class="step"><strong>STEP 04</strong><h3>Improve</h3><p>Review performance and identify what comes next.</p></div>
+</div></div></section>
+<section><div class="wrap reveal"><div class="cta"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make your next move <span class="accent">count.</span></h2><p>Tell us what you're working towards. We'll start with a conversation.</p></div><a class="btn primary" href="#contact">Start a conversation ↗</a></div></div></section>
+<section id="contact"><div class="wrap contact reveal">
+<div><p class="eyebrow">05 / GET IN TOUCH</p><h2>Let's talk about<br><span class="accent">what's possible.</span></h2><p class="sub">Have a question or an idea for your brand? Send a message and let's explore the next step.</p><p class="contact-note">Use the form to share a little about your project. Add your agency email before publishing.</p><p class="email">ZENVYQ · Digital Agency</p></div>
+<div class="contact-box"><form id="contactForm"><input name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required><input name="email" type="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required><input name="subject" placeholder="What do you need help with?" aria-label="Subject" required><textarea name="message" placeholder="Tell us about your project..." aria-label="Message" required></textarea><button class="btn primary" type="submit">Prepare enquiry ↗</button><p id="formNote" class="contact-note" aria-live="polite">This demo form opens your email app. Configure a business email before launch.</p></form></div>
+</div></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home">ZENVYQ<span>.</span></a><span>Think Smart. Grow Digital.</span><span>© <span id="year"></span> ZENVYQ. All rights reserved.</span></div></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const menu=document.getElementById("menu"),links=document.getElementById("navlinks");
+menu.addEventListener("click",()=>{const open=links.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));menu.textContent=open?"×":"☰"});
+links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
+if("IntersectionObserver" in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("show");observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el))}else{document.querySelectorAll(".reveal").forEach(el=>el.classList.add("show"))}
+document.getElementById("contactForm").addEventListener("submit",event=>{event.preventDefault();const data=new FormData(event.currentTarget);const subject=encodeURIComponent(data.get("subject")+" — ZENVYQ enquiry");const body=encodeURIComponent("Name: "+data.get("name")+"\nEmail: "+data.get("email")+"\n\n"+data.get("message"));document.getElementById("formNote").textContent="Your email app will open. Add your agency email address in the mailto link before launch.";window.location.href="mailto:hello@zenvyq.com?subject="+subject+"&body="+body});
+</script>
+</body>
+</html>
